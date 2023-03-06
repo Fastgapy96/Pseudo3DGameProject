@@ -1,7 +1,7 @@
 from sprite_object import *
 from random import randint, random, choice
 
-class NPC(AnimatedSprites):
+class NPC(AnimatedSprite):
     def __init__(self, game, path='resources/sprites/npc/soldier/0.png', pos=(10.5, 5.5),
                  scale=0.6, shift=0.38, animation_time=180):
         super().__init__(game, path, pos, scale, shift, animation_time)
@@ -184,4 +184,14 @@ class NPC(AnimatedSprites):
 class SoldierNPC(NPC):
     def __init__(self, game, path='resources/sprites/npc/soldier/0.png', pos=(10.5, 5.5),
                  scale=0.6, shift=0.38, animation_time=180):
-        super().__init__(game, path, pos, scale, shift, animation_time)                          
+        super().__init__(game, path, pos, scale, shift, animation_time)
+
+class CyberDemon(NPC):
+    def __init__(self, game, path='resources/sprites/npc/cyber_demon/0.png', pos=(11.5, 6.0),
+                  scale=1.0, shift=0.04, animation_time=210):
+        super().__init__(game, path, pos, scale, shift, animation_time)
+        self.attack_dist = 6
+        self.health = 250
+        self.attack_damage = 15
+        self.speed = 0.055
+        self.accuracy = 0.25                                  
