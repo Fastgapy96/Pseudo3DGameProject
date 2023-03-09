@@ -19,6 +19,8 @@ class ObjectHandler():
         add_sprite(AnimatedSprite(game, pos=(1.5, 7.5)))
         add_sprite(AnimatedSprite(game, pos=(5.5, 3.25)))
         add_sprite(AnimatedSprite(game, pos=(5.5, 4.75)))
+        add_sprite(AnimatedSprite(game, pos=(6.5, 14.75)))
+        add_sprite(AnimatedSprite(game, pos=(14.5, 16.75)))
 
         #npc map
         add_npc(SoldierNPC(game, pos=(10.5, 3.5)))
