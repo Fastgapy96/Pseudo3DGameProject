@@ -21,6 +21,9 @@ class ObjectHandler():
         add_sprite(AnimatedSprite(game, pos=(5.5, 4.75)))
         add_sprite(AnimatedSprite(game, pos=(6.5, 14.75)))
         add_sprite(AnimatedSprite(game, pos=(14.5, 16.75)))
+        add_sprite(AnimatedSprite(game, pos=(1.3, 11.1)))
+        add_sprite(AnimatedSprite(game, pos=(1.1, 18.7)))
+        add_sprite(AnimatedSprite(game, pos=(3.8, 14.4)))
 
         #npc map
         add_npc(SoldierNPC(game, pos=(10.5, 3.5)))
@@ -31,6 +34,9 @@ class ObjectHandler():
         add_npc(SoldierNPC(game, pos=(7.5, 12.5)))
         add_npc(CyberDemon(game, pos=(11.5, 15.5)))
         add_npc(SoldierNPC(game, pos=(14.0, 2.5)))
+        add_npc(SoldierNPC(game, pos=(12.75, 11.45)))
+        add_npc(SoldierNPC(game, pos=(13.1, 11.8)))
+        add_npc(SoldierNPC(game, pos=(13.5, 18.0)))
 
     def update(self):
         self.npc_positions = {npc.map_pos for npc in self.npc_list if npc.alive}
