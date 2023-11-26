@@ -10,7 +10,7 @@ class Player:
         self.shot = False
         self.health = PLAYER_MAX_HEALTH
         self.rel = 0
-        self.health_recovery_delay = 2500
+        self.health_recovery_delay = 1500
         self.time_prev = pygame.time.get_ticks()
 
     def recover_health(self):
