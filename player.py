@@ -101,6 +101,7 @@ class Player:
         self.movment()
         self.mouse_control()
         self.recover_health()
+        print(self.x, self.y)
 
     @property
     def pos(self):
@@ -108,4 +109,4 @@ class Player:
 
     @property
     def map_pos(self):
-        return int(self.x), int(self.y)         
+        return int(self.x), int(self.y)        
