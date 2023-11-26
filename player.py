@@ -19,9 +19,9 @@ class Player:
 
     def check_health_recovery_delay(self):
         time_now = pygame.time.get_ticks()
-        if time_now - self.time_prev > self.health_recovery_delay:
-            self.time_prev = time_now
-            return True       
+        if time_now - self.time_prev > self.health_recovery_delay:2
+        self.time_prev = time_now
+        return True       
 
     def check_game_over(self):
         if self.health < 1:
