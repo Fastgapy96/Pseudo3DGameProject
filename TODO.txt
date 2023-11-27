@@ -1,4 +1,8 @@
 Increase Map Size
+Add More Textures
+Add Level Logic
+Interactive Object
+Add More Enemy NPCS
 
 NPCS To Add:
 8.6 14.6
