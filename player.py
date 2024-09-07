@@ -12,6 +12,7 @@ class Player:
         self.rel = 0
         self.health_recovery_delay = 700
         self.time_prev = pygame.time.get_ticks()
+        self.interact = False
 
     def recover_health(self):
         if self.check_health_recovery_delay() and self.health < PLAYER_MAX_HEALTH:
@@ -64,6 +65,8 @@ class Player:
          if keys[pygame.K_d]:
             dx += -speed_sin
             dy += speed_cos
+         if keys[pygame.K_e]:
+            self.interact = True   
 
          self.check_wall_collision(dx, dy)    
 
@@ -101,6 +104,7 @@ class Player:
         self.movment()
         self.mouse_control()
         self.recover_health()
+        #Console Log Coordinates
         print(self.x, self.y)
 
     @property
